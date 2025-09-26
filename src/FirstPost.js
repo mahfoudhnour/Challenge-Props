@@ -1,11 +1,16 @@
-export default function FirstPost(age){
-    return(
-   <div>
-    <h1>{age}</h1>
-    <h2>Nour Mahfoudh</h2>
-    <hr/>
-    <p>CouCou bonjour comment cv ?</p>
-
-   </div>
-    );
+export default function FirstPost({postName="No Title",postBody="this is the post body"}) {
+  return (
+    <div
+      style={{
+        padding: "10px",
+        border: "solid teal 5px",
+        background: "white",
+        margin: "25px",
+      }}
+    >
+      <h2>{postName}</h2>
+      <hr />
+      <p>{postBody}</p>
+    </div>
+  );
 }
